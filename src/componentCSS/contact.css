@@ -1,5 +1,5 @@
 .contact{
-    background-color: rgb(209, 209, 212);
+    background-color: white;
     float: left;
     border: rgb(158, 156, 156) thin solid;
     cursor: pointer;
@@ -7,7 +7,7 @@
 }
 
 .contact:hover {
-    background-color:  rgba(102, 102, 104, 0.048);
+    background-color:  rgb(231, 228, 228);
 }
 
 
