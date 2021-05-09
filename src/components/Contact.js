@@ -8,7 +8,7 @@ const Contact = (props) => {
     return(
         <div onClick={props.onClick} id={props.id} className="contact">  
             <img src={logo} className="contact-image"></img>
-            <div className="contact-name">{props.details == undefined ? "name" : props.details}</div>
+            <div className="contact-name"  >{props.details == undefined ? "name" : props.details}</div>
         </div>
     );
     

@@ -46,7 +46,7 @@ class Right extends React.Component{
                 <div className="rightChild-body">
                     {this.state.Usermessages.map(message => 
                         <div className = {message.direction === "1" ? "rightChild-body-right" : "rightChild-body-left" }>
-                            {this.parseLongMessages(message.message)}
+                            {message.message}
                         </div>)}
                 </div>
                 <div className="right-text">
