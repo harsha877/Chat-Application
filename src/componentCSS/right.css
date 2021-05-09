@@ -1,0 +1,50 @@
+.rightParent{
+    display: grid;
+    grid-template-rows: 10% auto 10%;
+    grid-row-gap: 10px;
+    /*width: 70%;*/
+    
+    
+}
+
+.rightChild{
+    border:white;
+}
+
+.rightChild-body{
+    display: flex;
+    flex-direction: column-reverse;
+    overflow: scroll;
+    max-height: calc(100vh - 160px);
+   
+}
+
+.rightChild-body > div{
+    background: rgb(208, 208, 212);
+    margin: 4px 10px;
+    padding: 10px;
+    width: fit-content ;
+}
+
+.rightChild-body-left{
+    align-self: flex-start;
+    text-align: left;
+    border-bottom-left-radius: 30px;
+    border-top-left-radius: 30px;
+}
+
+.rightChild-body-right{
+    align-self: flex-end;
+    text-align: right;
+    flex-shrink: inherit;
+    border-bottom-right-radius: 30px;
+    border-top-right-radius: 30px;
+}
+.right-text{
+    display: grid;
+    grid-template-columns: auto 50px;
+    grid-gap: 5px;
+    padding: 10px 5px 35px 5px;
+    background-color: aliceblue;
+    height : 40px;  
+}

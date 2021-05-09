@@ -1,0 +1,26 @@
+body{
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+button{
+    cursor: pointer;
+}
+
+.home{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    background-color: white;
+}
+
+.left{
+    
+    display: inline-block;
+    
+}
+
+.right{
+    display: inline-block;
+    
+    
+}

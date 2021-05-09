@@ -1,0 +1,28 @@
+.contact{
+    background-color: rgb(209, 209, 212);
+    float: left;
+    border: rgb(158, 156, 156) thin solid;
+    cursor: pointer;
+    width: 100%;
+}
+
+.contact:hover {
+    background-color:  rgba(102, 102, 104, 0.048);
+}
+
+
+
+.contact-image{
+    border-radius: 50%;
+    border-style: initial;
+    margin: 3% 3% 3% 3%;
+    height: 15%;
+    width: 15%;
+    float: left;
+    
+}
+
+.contact-name{
+    margin-top: 7%;
+    
+}

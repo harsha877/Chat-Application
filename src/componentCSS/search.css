@@ -1,0 +1,15 @@
+.search{
+    height: 10%;
+    margin: 2% 2% 2% 20%;
+    border-right-color: black;
+    
+}
+
+.addButton{
+    cursor: pointer;
+}
+.searchText{
+    width: 70%;
+    height: 70%;
+    
+}

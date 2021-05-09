@@ -1,0 +1,41 @@
+.leftParent{
+    float: left;
+    /*width: 30%;*/
+    background-color: rgba(84, 87, 87, 0.384);
+    height: 100vh;
+    
+    width: 100%;
+    
+}
+
+.left{
+    
+    max-height: 100vh;
+    width: 100%;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.zeroResults{
+    text-align: center;
+    padding-top: 10%;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    border-radius: 100px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px white; 
+    border-radius: 10px;
+  }
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+  
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(126, 124, 124); 
+}
