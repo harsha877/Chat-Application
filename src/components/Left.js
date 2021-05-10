@@ -9,7 +9,7 @@ class Left extends React.Component{
     constructor(){
         super();
     }
-    state = {contacts: contacts,AddNewContact: false}
+    state = {contacts: contacts,AddNewContact: false, Info: false}
 
     onChangeHandler = (event) => {
         const searchKey = event.target.value;
@@ -19,7 +19,14 @@ class Left extends React.Component{
     }
 
     onAddNewContact = (event)=>{
-        this.setState({AddNewContact:!this.state.AddNewContact})
+        this.setState({AddNewContact:!this.state.AddNewContact});
+        this.setState({info:false});
+    }
+
+    onAddInfo = (event)=>{
+        console.log("called addinfo");
+        this.setState({AddNewContact:!this.state.AddNewContact});
+        this.setState({Info:!this.state.Info});
     }
 //
     render(){
@@ -27,8 +34,8 @@ class Left extends React.Component{
         const ZeroResultsJSX = left_contacts.length === 0 ? "No matching contacts" :  "" ;
         return(
             <div className="leftParent">
-                <Popup  close={this.onAddNewContact} show={this.state.AddNewContact}/>
-                <div><Search  onAddNewContact={this.onAddNewContact} onChange={this.onChangeHandler} /></div>
+                <Popup  close={this.onAddNewContact} infoClose={this.onAddInfo} show={this.state.AddNewContact} info={this.state.Info} />
+                <div><Search  onAddNewContact={this.onAddNewContact} onChange={this.onChangeHandler} info={this.onAddInfo} /></div>
                 <div className="left">
                 {left_contacts.map((element)=> <Contact onClick={this.props.onClick} details={element.name} id={element.id} />)}
                 <div className="zeroResults">{ZeroResultsJSX}

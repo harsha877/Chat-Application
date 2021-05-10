@@ -1,12 +1,14 @@
 .search{
     height: 10%;
-    margin: 2% 2% 2% 20%;
+    margin: 2% 2% 2% 2%;
     border-right-color: black;
     
 }
 
 .addButton{
     cursor: pointer;
+    margin-left: 3%;
+    margin-right: 3%;
 }
 .searchText{
     width: 70%;

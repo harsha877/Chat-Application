@@ -6,15 +6,15 @@ import '../componentCSS/popupElement.css'
 function Popup(props){  
     
     console.log(props.show)
-        return (props.show !== false) ? (
+        return (props.show !== false ) ? (
 
             <div className="popup" >
                 <div className="popup-inner">
-                    <div ><b>Add User</b></div><br/>
+                    <div ><b>{props.info === true ? "User Info" : "Add User"}</b></div><br/>
+                    {props.info === true ?<label> ID: 1234</label> : ""}
+                    <input  placeholder={props.info === true? "User ID": "ID"} ></input><br></br><br></br>
                     
-                    <input  placeholder="ID"></input><br></br><br></br>
-                    
-                    <button onClick= {props.close} className="btn">cancel</button>
+                    <button onClick= {props.info === true?props.infoClose:props.close} className="btn">cancel</button>
                     <button className="addButton">Add</button>
                 </div>
             </div>
